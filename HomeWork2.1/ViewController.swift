@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     @IBAction func updateGreenSlider(_ sender: UISlider) {
         updateColor()
-        labelBlue.text = String(greenSlider.value)
+        labelGreen.text = String(greenSlider.value)
     }
     
     func updateColor(){
