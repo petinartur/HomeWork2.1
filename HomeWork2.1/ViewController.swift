@@ -27,15 +27,15 @@ class ViewController: UIViewController {
     }
     @IBAction func updateRedSlider(_ sender: UISlider) {
         updateColor()
-        labelRed.text = String(redSlider.value)
+        labelRed.text = String(format: "%.1f", redSlider.value)
     }
     @IBAction func updateBlueSlider(_ sender: UISlider) {
         updateColor()
-        labelBlue.text = String(blueSlider.value)
+        labelBlue.text = String(format: "%.1f", blueSlider.value)
     }
     @IBAction func updateGreenSlider(_ sender: UISlider) {
         updateColor()
-        labelGreen.text = String(greenSlider.value)
+        labelGreen.text = String(format: "%.1f", greenSlider.value)
     }
     
     func updateColor(){
